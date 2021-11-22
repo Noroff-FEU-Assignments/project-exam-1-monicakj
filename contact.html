@@ -12,20 +12,96 @@
 <body>
 
     <header>
-        <div class="header"></div>
-
-        <div class="header-img"></div>
-
         <nav>
+
+            <!-- LOGO -->
+            <a href="/index.html">
+                <div class="logo">
+                <img src="/image/logo.png">
+                </div>
+            </a>
+
+            <!-- TOPNAV -->
             <div class="topnav" id="myTopnav">
-                <a href="index.html" class="active">Home</a>
+                <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="blogposts.html">Blog</a>
-                <a href="contact.html">Contact</a>
+                <a href="contact.html" class="active">Contact</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
             </div>
         </nav>
+
+        <div class="header-contact"></div>
+
     </header>
+
+    <main>
+        
+        <!-- CONTACT DETAILS -->
+        <div class="contact-details">
+            <h2>Contact Details</h2>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+
+            <p>124 Street Name<br>
+            City Name<br>
+            State, Country, 12345<br>
+            email@example.com<br>
+            +00 123 4567890</p>
+        </div>
+
+        <!-- CONTACT CONTAINER -->
+        <div class="contact-container">
+            <h2>Let's Stay In Touch!</h2>
+          <div class="row">
+            <div class="column">
+        
+              <form id="contactForm">
+                
+                <div>
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="fullname" placeholder="Your name">
+                <!-- <div class="form-error" id="firstNameError">Please enter your name.</div> -->
+                </div>
+        
+                <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="email@example.com">
+                <!-- <div class="form-error" id="emailError">Please enter a valid email address.</div> -->
+                </div>
+
+                <div>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject of the message">
+                    <!-- <div class="form-error" id="subjectError">Please enter your subject.</div> -->
+                    </div>
+        
+                <div>
+                <label for="subject">Message</label>
+                <textarea id="subject" name="subject" placeholder="Your message" style="height:190px"></textarea>
+                <!-- <div class="form-error" id="subjectError">Your message must have a value with a minimum length of 10 characters.</div> -->
+                </div>
+        
+                <input type="submit" id="button" value="SUBMIT MESSAGE">
+        
+              </form>
+            </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+            <img src="/image/logo-white.png">
+            <p>Copyright @ All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="/js/topnav.js"></script>
     
 </body>
 </html>

@@ -12,11 +12,16 @@
 <body>
 
         <header>
-            <div class="header"></div>
-
-            <div class="header-img"></div>
-
             <nav>
+
+                <!-- LOGO -->
+                <a href="/index.html">
+                     <div class="logo">
+                    <img src="/image/logo.png">
+                    </div>
+                </a>
+
+                <!-- TOPNAV -->
                 <div class="topnav" id="myTopnav">
                     <a href="index.html" class="active">Home</a>
                     <a href="about.html">About</a>
@@ -25,43 +30,88 @@
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
                 </div>
             </nav>
+
+            <div class="header-home">
+                <div class="header-text">
+                    <p>Got a lust for adventure? Then get inspired with my
+                    independent travel guides from around the world...</p>
+                    <a href="">More about Bucket List Travels ></a>
+                </div>
+            </div>
+
         </header>
 
         <main>
-            <section class="main">
 
-                <section class="bio">
-                <div class="bio-img"></div>
-                <div class="bio-text">
-                    <h3>Welcome to my blog!</h3>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <!-- LATEST POSTS -->
+            <div class="latest-posts">
+                <h1>Latest Posts</h1>
+            </div>
+
+            <div class="post1"></div>
+            <div class="post2"></div>
+            <div class="post3"></div>
+
+            <!-- DISCOVER -->
+            <div class="discover">
+                <h1>Discover your next destination</h1>
+                <a href="">
+                <button class="discover-button">Read More</button>
+                </a>
+            </div>
+
+            <!-- TOP 3 DESTINATIONS -->
+            <div class="top3">
+                <h2>Top 3 Destinations</h2>
+                </div>
+                
+                <section class="destination">
+
+                    <!-- DESTINATION 1 -->
+                <div class="destination1">
+                    <h2>Thailand</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
+                    </p>
+                    <a href="">Click here to read more ></a>
+                </div>
+
+                <!-- DESTINATION 2 -->
+                <div class="destination2">
+                    <h2>Bali</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat...
+                        </p>
+                        <a href="">Click here to read more ></a>
+                </div>
+
+                <!-- DESTINATION 3 -->
+                <div class="destination3">
+                    <h2>Singapore</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat...
+                        </p>
+                        <a href="">Click here to read more ></a>
                 </div>
                 </section>
 
-                    <div class="main-post"></div>
-
-                    <div class="latest-posts">
-                        <h2>Latest Posts</h2>
-                    </div>
-
-                <!-- <div class="latest-posts">
-                    <h2>Latest Posts</h2>
-                </div> -->
-
-            </section>
         </main>
 
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer">
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+                <img src="/image/logo-white.png" alt="logo">
+                <p>Copyright @ All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+        
         <!-- JAVASCRIPT -->
-        <script>
-            function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
-              } else {
-                x.className = "topnav";
-              }
-            }
-            </script>
+        <script src="/js/topnav.js"></script>
     
 </body>
 </html>

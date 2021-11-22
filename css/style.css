@@ -1,125 +1,412 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 h2 {
-    font-size: 35px;
+  font-size: 35px;
 }
 
 h3 {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 p {
-    font-size: 20px;
+  font-size: 20px;
 }
-
 
 body {
-    background: #E5E5E5;
-    font-family: roboto;
+  background: white;
+  font-family: roboto;
 }
 
-/* HEADER */
-.header {
-    width: 100%;
-    height: 72px;
-    background-color: white;
-}
-
-.header-img {
-    width: 100%;
-    height: 428px;
-    background-color: #cccccc;
-}
-
+/* TOPNAV */
 .topnav {
-    width: 100%;
-    height: 72px;
-    background-color: white;
-    padding-left: 165px;
-    padding-top: 20px;
+  width: 100%;
+  height: 72px;
+  background-color: white;
+  /* padding-left: 925px; */
+  padding-left: 65%;
+  padding-top: 24px;
 }
 
 .topnav a {
-    font-size: 25px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding-right: 80px; 
-    text-decoration: none;
-    color: black;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-right: 50px;
+  text-decoration: none;
+  color: black;
+}
+
+.topnav a:hover {
+  font-weight: bold;
+}
+
+.topnav a.active {
+  font-weight: bold;
 }
 
 .topnav .icon {
-    display: none;
-    color: black;
+  display: none;
+  color: black;
 }
 
 .topnav .icon:hover {
-    background-color: none;
+  background-color: none;
 }
 
-/* MAIN */
-.main {
-    width: 100%;
-    height: 1000px;
+/* HEADER HOME */
+.header-home {
+  width: 100%;
+  height: 500px;
+  /* background-image: url(/image/welcome.png); */
+  background-color: #ccc;
 }
 
-.main-post {
-    position: relative;
-    top: 49px;
-    width: 850px;
-    height: 645px;
-    left: 165px;
-    background-color: #cccccc;
+.header-text {
+  width: 500px;
+  position: absolute;
+  margin-left: 159px;
+  margin-top: 17%;
+  color: white;
+  text-decoration: none;
 }
 
-.latest-posts {
-    position: relative;
-    top: 119px;
-    left: 165px;
+.header-text a {
+  position: absolute;
+  font-family: roboto;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 20px;
+  width: 100%;
 }
 
-/* BIO */
-.bio {
-    float: right;
+.logo img {
+  position: absolute;
+  margin-left: 159px;
+  margin-top: 5px;
 }
 
-.bio-img {
-    position: relative;
-    top: 49px;
-    width: 272px;
-    height: 263px;
-    margin-right: 49px;
-    border-radius: 100%;
-    background: #C4C4C4;
+/* HOME */
+.latest-posts h1 {
+  margin-left: 159px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 85px;
 }
 
-.bio-text {
-    position: relative;
-    top: 80px;
-    width: 298px;
-    height: 133px;
-    margin-right: 25px;
-    line-height: 24px;
-    text-align: center;
+.post1,
+.post2,
+.post3 {
+  background-color: #c4c4c4;
+  width: 342px;
+  height: 525px;
+  display: inline-block;
+  margin: 51px 40px;
 }
 
-.bio-text h3 {
-    font-weight: bold;
-    margin-bottom: 10px;
+.post1 {
+  margin-left: 159px;
 }
 
-.bio-text p {
-    font-size: 18px;
-    font-weight: 500;
+.discover {
+  width: 100%;
+  height: 450px;
+  /* background-image: url(/image/discover.png); */
+  background-color: #ccc;
+  margin-top: 143px;
+  margin-bottom: 100px;
+  position: relative;
+  text-align: center;
 }
 
+.discover h1 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.discover-button {
+  position: absolute;
+  /* height: 62px;
+  width: 216px; */
+  width: 154px;
+  height: 48px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 1s;
+  border-radius: 6px;
+  border: none;
+}
+
+.discover-button:hover {
+  background: white;
+  color: black;
+}
+
+.top3 h2 {
+  margin-left: 159px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.destination1,
+.destination2,
+.destination3 {
+  height: 384px;
+  width: 561px;
+  margin-bottom: 40px;
+  margin-left: 159px;
+}
+
+.destination1 {
+  background-image: url(/image/thailand.png);
+}
+
+.destination2 {
+  background-image: url(/image/bali.png);
+}
+
+.destination3 {
+  background-image: url(/image/singapore.png);
+}
+
+.destination {
+  display: inline-block;
+}
+
+.destination h2 {
+  position: absolute;
+  text-transform: uppercase;
+  margin-left: 45%;
+  margin-top: 100px;
+}
+
+.destination p {
+  position: absolute;
+  margin-left: 45%;
+  margin-top: 150px;
+  width: 550px;
+}
+
+.destination a {
+  position: absolute;
+  margin-left: 45%;
+  margin-top: 260px;
+  font-family: roboto;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+}
+
+.destination a:hover {
+  color: #006579;
+}
+
+/* ABOUT */
+.header-about {
+  width: 100%;
+  height: 500px;
+  background-image: url(/image/about.png);
+  background-size: cover;
+  position: relative;
+}
+
+/* ABOUT1 */
+.about1,
+.about3 {
+  width: 100%;
+  height: 400px;
+}
+
+.about1-text,
+.about3-text {
+  width: 680px;
+  padding-top: 90px;
+  height: 198px;
+  margin-left: 159px;
+}
+
+.about1-text h2,
+.about3-text h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.about1-text p,
+.about3-text p {
+  margin-top: 30px;
+  line-height: 24px;
+}
+
+/* ABOUT2 */
+.about2 {
+  width: 100%;
+  height: 500px;
+  /* background-image: url(/image/1.png); */
+  background-color: #ccc;
+}
+
+/* BLOG POSTS */
+.header-blog {
+  height: 500px;
+  width: 100%;
+  background-color: #cccccc;
+  background-image: url(/image/blog.png);
+  background-repeat: no-repeat;
+}
+
+.blog-posts {
+  width: 100%;
+  height: 1000px;
+}
+
+/* CONTACT */
+.header-contact {
+  width: 100%;
+  height: 500px;
+  background-image: url(/image/contact.png);
+  background-size: cover;
+}
+
+.contact-details {
+  height: 222px;
+  width: 50%;
+  margin-left: 159px;
+  margin-top: 50px;
+  line-height: 30px;
+}
+
+.contact-details h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.contact-details p {
+  margin-top: 20px;
+}
+
+/* CONTACT CONTAINER */
+.contact-container {
+  width: 80%;
+  height: auto;
+  border-radius: 0;
+  background-color: white;
+  padding: 35px;
+  color: black;
+  font-size: 18px;
+  position: relative;
+  margin: 25px auto 100px auto;
+  border: 1px solid black;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.contact-container h2 {
+  margin-bottom: 30px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #000;
+  margin: 6px 0 15px 0;
+  resize: vertical;
+  font-size: 15px;
+  font-family: roboto;
+}
+
+input[type="submit"] {
+  /* background: linear-gradient(90deg, #13547a 0%, #80d0c7 100%); */
+  background-color: #4291ad;
+  color: white;
+  padding: 15px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+}
+
+/* FOOTER */
+.footer {
+  height: 220px;
+  width: 100%;
+  background-color: black;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer p {
+  margin-top: 100px;
+  color: white;
+  font-size: 15px;
+}
+
+.footer img {
+  position: absolute;
+  margin-top: 130px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fa {
+  margin-top: 20px;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
