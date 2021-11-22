@@ -164,24 +164,17 @@ body {
   border: 1px solid black;
 }
 
-.top3 h2 {
-  margin-left: 159px;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-
-.destination1,
-.destination2 {
+.flights-hotels,
+.guided-activities {
   height: 700px;
   width: 100%;
 }
 
-.destination1 {
+.flights-hotels {
   background-color: #ededed;
 }
 
-.dest1-img {
+.flights-hotels-img {
   position: absolute;
   margin-top: 73px;
   margin-left: 159px;
@@ -190,7 +183,7 @@ body {
   height: 553px;
 }
 
-.dest2-img {
+.guided-activities-img {
   position: absolute;
   margin-left: 55%;
   margin-top: 73px;
@@ -199,8 +192,8 @@ body {
   height: 553px;
 }
 
-.dest1-text,
-.dest2-text {
+.flights-hotels-text,
+.guided-activities-text {
   font-family: roboto;
   font-size: 50px;
   position: absolute;
@@ -209,26 +202,25 @@ body {
   font-weight: bold;
 }
 
-.dest1-text {
+.flights-hotels-text {
   margin-top: 15%;
   margin-left: 57%;
 }
 
-.dest2-text {
+.guided-activities-text {
   margin-top: 15%;
   margin-left: 159px;
 }
 
-.dest1-text p,
-.dest2-text p {
+.flights-hotels-text p,
+.guided-activities-text p {
   margin-top: 15px;
   text-transform: none;
   font-weight: normal;
   width: 500px;
 }
 
-.dest1-button,
-.dest2-button {
+.discover2-button {
   position: absolute;
   width: 154px;
   height: 48px;
@@ -243,50 +235,16 @@ body {
   /* border-radius: 6px; */
   border: none;
   border: 1px solid black;
-}
-
-.dest1-button,
-.dest2-button {
   margin-left: 15%;
   margin-top: 8%;
 }
 
-.dest1-button:hover,
-.dest2-button:hover {
+.discover2-button:hover {
   /* background-color: #4291ad; */
   background-color: white;
   color: black;
   border: 1px solid black;
 }
-
-/* .destination h2 {
-  position: absolute;
-  text-transform: uppercase;
-  margin-left: 45%;
-  margin-top: 100px;
-}
-
-.destination p {
-  position: absolute;
-  margin-left: 45%;
-  margin-top: 150px;
-  width: 550px;
-}
-
-.destination a {
-  position: absolute;
-  margin-left: 45%;
-  margin-top: 260px;
-  font-family: roboto;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: underline;
-  color: black;
-}
-
-.destination a:hover {
-  color: #006579;
-} */
 
 /* ABOUT */
 .header-about {
@@ -376,6 +334,7 @@ body {
   width: 80%;
   height: auto;
   border-radius: 0;
+  /* background-color: #ededed; */
   background-color: white;
   padding: 35px;
   color: black;
@@ -471,4 +430,13 @@ input[type="submit"]:hover {
 .fa-pinterest {
   background: #cb2027;
   color: white;
+}
+
+/* FORM ERROR */
+.form-error {
+  display: none;
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 2px;
+  margin-bottom: 20px;
 }
