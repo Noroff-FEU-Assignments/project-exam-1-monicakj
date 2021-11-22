@@ -31,7 +31,6 @@ body {
 .topnav {
   width: 100%;
   height: 72px;
-  background-color: white;
   /* padding-left: 925px; */
   padding-left: 65%;
   padding-top: 24px;
@@ -119,18 +118,17 @@ body {
   margin-left: 159px;
 }
 
-.discover {
+.discover1 {
   width: 100%;
   height: 450px;
   /* background-image: url(/image/discover.png); */
   background-color: #ccc;
   margin-top: 143px;
-  margin-bottom: 100px;
   position: relative;
   text-align: center;
 }
 
-.discover h1 {
+.discover1 h1 {
   position: absolute;
   top: 45%;
   left: 50%;
@@ -156,13 +154,14 @@ body {
   font-size: 16px;
   cursor: pointer;
   transition: 1s;
-  border-radius: 6px;
-  border: none;
+  /* border-radius: 6px; */
+  border: 1px solid black;
 }
 
 .discover-button:hover {
   background: white;
   color: black;
+  border: 1px solid black;
 }
 
 .top3 h2 {
@@ -173,31 +172,94 @@ body {
 }
 
 .destination1,
-.destination2,
-.destination3 {
-  height: 384px;
-  width: 561px;
-  margin-bottom: 40px;
-  margin-left: 159px;
+.destination2 {
+  height: 700px;
+  width: 100%;
 }
 
 .destination1 {
-  background-image: url(/image/thailand.png);
+  background-color: #ededed;
 }
 
-.destination2 {
-  background-image: url(/image/bali.png);
+.dest1-img {
+  position: absolute;
+  margin-top: 73px;
+  margin-left: 159px;
+  background-color: white;
+  width: 500px;
+  height: 553px;
 }
 
-.destination3 {
-  background-image: url(/image/singapore.png);
+.dest2-img {
+  position: absolute;
+  margin-left: 55%;
+  margin-top: 73px;
+  background-color: #ccc;
+  width: 500px;
+  height: 553px;
 }
 
-.destination {
-  display: inline-block;
+.dest1-text,
+.dest2-text {
+  font-family: roboto;
+  font-size: 50px;
+  position: absolute;
+  color: black;
+  margin-top: 10%;
+  font-weight: bold;
 }
 
-.destination h2 {
+.dest1-text {
+  margin-top: 15%;
+  margin-left: 57%;
+}
+
+.dest2-text {
+  margin-top: 15%;
+  margin-left: 159px;
+}
+
+.dest1-text p,
+.dest2-text p {
+  margin-top: 15px;
+  text-transform: none;
+  font-weight: normal;
+  width: 500px;
+}
+
+.dest1-button,
+.dest2-button {
+  position: absolute;
+  width: 154px;
+  height: 48px;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 1s;
+  /* border-radius: 6px; */
+  border: none;
+  border: 1px solid black;
+}
+
+.dest1-button,
+.dest2-button {
+  margin-left: 15%;
+  margin-top: 8%;
+}
+
+.dest1-button:hover,
+.dest2-button:hover {
+  /* background-color: #4291ad; */
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+/* .destination h2 {
   position: absolute;
   text-transform: uppercase;
   margin-left: 45%;
@@ -224,7 +286,7 @@ body {
 
 .destination a:hover {
   color: #006579;
-}
+} */
 
 /* ABOUT */
 .header-about {
