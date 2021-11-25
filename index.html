@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,11 +13,11 @@
 <body>
 
         <header>
-
+            <nav>
                 <!-- LOGO -->
                 <a href="/index.html">
                      <div class="logo">
-                    <img src="/image/logo.png">
+                    <img src="/image/logo-white.png">
                     </div>
                 </a>
 
@@ -28,29 +29,29 @@
                     <a href="contact.html">Contact</a>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
                 </div>
-                
+            </nav>
                 <div class="header-home">
-                <div class="header-text">
+                <!-- <div class="header-text">
                     <p>Got a lust for adventure? Then get inspired with my
                     independent travel guides from around the world...</p>
-                    <a href="">More about Bucket List Travels ></a>
+                    <a href="">More about Bucket List Travels ></a> -->
                 </div>
-            </div>
-
         </header>
 
         <main>
-
             <!-- LATEST POSTS -->
             <div class="latest-posts">
                 <h1>Latest Posts</h1>
+
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carouselbox"></div>
+                        <a class="switchLeft"><i class="fas fa-chevron-left"></i></a>
+                        <a class="switchRight"><i class="fas fa-chevron-right"></i></a>
+                    </div>
             </div>
 
-            <!-- <div class="post1"></div>
-            <div class="post2"></div>
-            <div class="post3"></div> -->
-
-            <!-- DISCOVER -->
+            <!-- DISCOVER1 -->
             <div class="discover1">
                 <h1>Discover your next destination</h1>
                 <a href="">
@@ -58,7 +59,8 @@
                 </a>
             </div>
 
-            <section class="discover2">
+            <!-- DISCOVER2 -->
+            <div class="discover2">
 
             <div class="flights-hotels">
                 <div class="flights-hotels-text">Flights/hotels
@@ -68,7 +70,6 @@
                             <button class="discover2-button">Read More</button>
                         </a>
                     </div>
-
                 <div class="flights-hotels-img"></div>
             </div>
 
@@ -85,9 +86,7 @@
 
                 <div class="guided-activities-img"></div>
             </div>
-            
-        </section>
-
+        </div>
         </main>
 
         <!-- FOOTER -->
@@ -96,14 +95,16 @@
                 <a href="#" class="fa fa-instagram"></a>
                 <a href="#" class="fa fa-twitter"></a>
                 <a href="#" class="fa fa-pinterest"></a>
-                <img src="/image/logo-white.png" alt="logo">
+                <a href="/index.html">
+                    <img src="/image/logo-white.png">
+                </a>
                 <p>Copyright @ All Rights Reserved</p>
-                </div>
             </div>
         </footer>
         
         <!-- JAVASCRIPT -->
         <script src="/js/topnav.js"></script>
+        <script src="/js/index.js"></script>
     
 </body>
 </html>

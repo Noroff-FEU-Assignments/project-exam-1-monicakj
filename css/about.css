@@ -1,0 +1,43 @@
+/* ABOUT */
+.header-about {
+  width: 100%;
+  height: 500px;
+  background-image: url(/image/about.png);
+  background-size: cover;
+  position: relative;
+}
+
+/* ABOUT1 */
+.about1,
+.about3 {
+  width: 100%;
+  height: 400px;
+}
+
+.about1-text,
+.about3-text {
+  width: 680px;
+  padding-top: 90px;
+  height: 198px;
+  margin-left: 159px;
+}
+
+.about1-text h2,
+.about3-text h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.about1-text p,
+.about3-text p {
+  margin-top: 30px;
+  line-height: 24px;
+}
+
+/* ABOUT2 */
+.about2 {
+  width: 100%;
+  height: 500px;
+  /* background-image: url(/image/1.png); */
+  background-color: #ccc;
+}

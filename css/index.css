@@ -1,0 +1,249 @@
+/* HEADER HOME */
+.header-home {
+  width: 100%;
+  height: 500px;
+  /* background-image: url(/image/welcome.png); */
+  background-color: #ccc;
+}
+
+.header-text {
+  width: 500px;
+  position: absolute;
+  margin-left: 159px;
+  margin-top: 17%;
+  color: white;
+  text-decoration: none;
+}
+
+.header-text a {
+  position: absolute;
+  font-family: roboto;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* HOME */
+.latest-posts {
+  background-color: white;
+  width: auto;
+  height: auto;
+}
+
+.latest-posts h1 {
+  margin-left: 159px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+
+/* CAROUSLE */
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0px 20px 0px 20px;
+}
+
+.carousel {
+  margin-top: 50px;
+  height: 250px;
+  width: 80%;
+  position: relative;
+}
+
+.switchLeft,
+.switchRight {
+  font-weight: bold;
+  height: 0%;
+  width: 25px;
+  line-height: 250px;
+  font-size: 25px;
+  text-align: center;
+  background-color: red;
+  top: 0;
+  z-index: 3;
+  margin-top: 8%;
+}
+
+.switchLeft {
+  position: absolute;
+  left: -50px;
+}
+
+.switchRight {
+  position: absolute;
+  right: -50px;
+}
+
+.carouselbox {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.carouselbox img {
+  width: 220px;
+  height: 220px;
+  background-size: cover;
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+}
+
+.carouselbox-content:hover {
+  transform: scale(1.1);
+  z-index: 5;
+}
+
+.switchLeft:hover,
+.switchRight:hover {
+  font-size: 35px;
+}
+
+.carouselbox-content p {
+  font-size: 18px;
+}
+
+.discover1 {
+  width: 100%;
+  height: 450px;
+  /* background-image: url(/image/discover.png); */
+  background-color: #ccc;
+  margin-top: 143px;
+  position: relative;
+  text-align: center;
+}
+
+.discover1 h1 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.discover-button {
+  position: absolute;
+  /* height: 62px;
+  width: 216px; */
+  width: 154px;
+  height: 48px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 1s;
+  /* border-radius: 6px; */
+  border: 1px solid black;
+}
+
+.discover-button:hover {
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.flights-hotels,
+.guided-activities {
+  height: 700px;
+  width: 100%;
+}
+
+.flights-hotels {
+  background-color: white;
+}
+
+.guided-activities {
+  background-color: #ededed;
+}
+
+.flights-hotels-img {
+  position: absolute;
+  margin-top: 73px;
+  margin-left: 159px;
+  background-color: #ccc;
+  width: 500px;
+  height: 553px;
+}
+
+.guided-activities-img {
+  position: absolute;
+  margin-left: 55%;
+  margin-top: 73px;
+  background-color: #ccc;
+  width: 500px;
+  height: 553px;
+}
+
+.flights-hotels-text,
+.guided-activities-text {
+  font-family: roboto;
+  font-size: 50px;
+  position: absolute;
+  color: black;
+  margin-top: 10%;
+  font-weight: bold;
+}
+
+.flights-hotels-text {
+  margin-top: 15%;
+  margin-left: 57%;
+}
+
+.guided-activities-text {
+  margin-top: 15%;
+  margin-left: 159px;
+}
+
+.flights-hotels-text p,
+.guided-activities-text p {
+  margin-top: 15px;
+  text-transform: none;
+  font-weight: normal;
+  width: 500px;
+}
+
+.discover2-button {
+  position: absolute;
+  width: 154px;
+  height: 48px;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 1s;
+  /* border-radius: 6px; */
+  border: none;
+  border: 1px solid black;
+  margin-left: 15%;
+  margin-top: 8%;
+}
+
+.discover2-button:hover {
+  /* background-color: #4291ad; */
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}

@@ -26,6 +26,11 @@ function createHTML(posts){
         <h1>${posts.title.rendered}</h1>
         </a>
 
+        <div class="posts-details">
+        Published: ${posts.date}
+        - Comments: (...)
+        </div>
+
         <div class="posts-content">
         ${posts.content.rendered}
         </div>

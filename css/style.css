@@ -23,7 +23,7 @@ p {
 }
 
 body {
-  background: white;
+  background: #ededed;
   font-family: roboto;
 }
 
@@ -34,6 +34,7 @@ body {
   /* padding-left: 925px; */
   padding-left: 65%;
   padding-top: 24px;
+  background-color: black;
 }
 
 .topnav a {
@@ -42,7 +43,7 @@ body {
   text-transform: uppercase;
   margin-right: 50px;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .topnav a:hover {
@@ -62,351 +63,10 @@ body {
   background-color: none;
 }
 
-/* HEADER HOME */
-.header-home {
-  width: 100%;
-  height: 500px;
-  /* background-image: url(/image/welcome.png); */
-  background-color: #ccc;
-}
-
-.header-text {
-  width: 500px;
-  position: absolute;
-  margin-left: 159px;
-  margin-top: 17%;
-  color: white;
-  text-decoration: none;
-}
-
-.header-text a {
-  position: absolute;
-  font-family: roboto;
-  text-transform: uppercase;
-  color: white;
-  font-weight: bold;
-  text-decoration: underline;
-  margin-top: 20px;
-  width: 100%;
-}
-
 .logo img {
   position: absolute;
   margin-left: 159px;
-  margin-top: 5px;
-}
-
-/* HOME */
-.latest-posts h1 {
-  margin-left: 159px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-top: 85px;
-}
-
-.post1,
-.post2,
-.post3 {
-  background-color: #c4c4c4;
-  width: 342px;
-  height: 525px;
-  display: inline-block;
-  margin: 51px 40px;
-}
-
-.post1 {
-  margin-left: 159px;
-}
-
-.discover1 {
-  width: 100%;
-  height: 450px;
-  /* background-image: url(/image/discover.png); */
-  background-color: #ccc;
-  margin-top: 143px;
-  position: relative;
-  text-align: center;
-}
-
-.discover1 h1 {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-transform: uppercase;
-  color: white;
-  text-decoration: none;
-}
-
-.discover-button {
-  position: absolute;
-  /* height: 62px;
-  width: 216px; */
-  width: 154px;
-  height: 48px;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: black;
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 1s;
-  /* border-radius: 6px; */
-  border: 1px solid black;
-}
-
-.discover-button:hover {
-  background: white;
-  color: black;
-  border: 1px solid black;
-}
-
-.flights-hotels,
-.guided-activities {
-  height: 700px;
-  width: 100%;
-}
-
-.flights-hotels {
-  background-color: #ededed;
-}
-
-.flights-hotels-img {
-  position: absolute;
-  margin-top: 73px;
-  margin-left: 159px;
-  background-color: white;
-  width: 500px;
-  height: 553px;
-}
-
-.guided-activities-img {
-  position: absolute;
-  margin-left: 55%;
-  margin-top: 73px;
-  background-color: #ccc;
-  width: 500px;
-  height: 553px;
-}
-
-.flights-hotels-text,
-.guided-activities-text {
-  font-family: roboto;
-  font-size: 50px;
-  position: absolute;
-  color: black;
-  margin-top: 10%;
-  font-weight: bold;
-}
-
-.flights-hotels-text {
-  margin-top: 15%;
-  margin-left: 57%;
-}
-
-.guided-activities-text {
-  margin-top: 15%;
-  margin-left: 159px;
-}
-
-.flights-hotels-text p,
-.guided-activities-text p {
-  margin-top: 15px;
-  text-transform: none;
-  font-weight: normal;
-  width: 500px;
-}
-
-.discover2-button {
-  position: absolute;
-  width: 154px;
-  height: 48px;
-  transform: translate(-50%, -50%);
-  background-color: black;
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 1s;
-  /* border-radius: 6px; */
-  border: none;
-  border: 1px solid black;
-  margin-left: 15%;
-  margin-top: 8%;
-}
-
-.discover2-button:hover {
-  /* background-color: #4291ad; */
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-}
-
-/* ABOUT */
-.header-about {
-  width: 100%;
-  height: 500px;
-  background-image: url(/image/about.png);
-  background-size: cover;
-  position: relative;
-}
-
-/* ABOUT1 */
-.about1,
-.about3 {
-  width: 100%;
-  height: 400px;
-}
-
-.about1-text,
-.about3-text {
-  width: 680px;
-  padding-top: 90px;
-  height: 198px;
-  margin-left: 159px;
-}
-
-.about1-text h2,
-.about3-text h2 {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.about1-text p,
-.about3-text p {
-  margin-top: 30px;
-  line-height: 24px;
-}
-
-/* ABOUT2 */
-.about2 {
-  width: 100%;
-  height: 500px;
-  /* background-image: url(/image/1.png); */
-  background-color: #ccc;
-}
-
-/* BLOG POSTS */
-.header-blog {
-  height: 500px;
-  width: 100%;
-  background-color: #cccccc;
-  background-image: url(/image/blog.png);
-  background-repeat: no-repeat;
-}
-
-.blog-posts {
-  width: 100%;
-  height: auto;
-}
-
-.posts {
-  width: 78%;
-  margin-left: 159px;
-  margin-top: 80px;
-  background-color: white;
-  margin-bottom: 100px;
-  border: 1px solid black;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-.posts h1 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.posts-content {
-  width: 80%;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-
-.posts a {
-  text-decoration: none;
-  color: black;
-}
-
-/* CONTACT */
-.header-contact {
-  width: 100%;
-  height: 500px;
-  background-image: url(/image/contact.png);
-  background-size: cover;
-}
-
-.contact-details {
-  height: 222px;
-  width: 50%;
-  margin-left: 159px;
-  margin-top: 50px;
-  line-height: 30px;
-}
-
-.contact-details h2 {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.contact-details p {
-  margin-top: 20px;
-}
-
-/* CONTACT CONTAINER */
-.contact-container {
-  width: 80%;
-  height: auto;
-  border-radius: 0;
-  /* background-color: #ededed; */
-  background-color: white;
-  padding: 35px;
-  color: black;
-  font-size: 18px;
-  position: relative;
-  margin: 25px auto 100px auto;
-  border: 1px solid black;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-.contact-container h2 {
-  margin-bottom: 30px;
-  color: black;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-input[type="text"],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #000;
-  margin: 6px 0 15px 0;
-  resize: vertical;
-  font-size: 15px;
-  font-family: roboto;
-}
-
-input[type="submit"] {
-  /* background: linear-gradient(90deg, #13547a 0%, #80d0c7 100%); */
-  background-color: #4291ad;
-  color: white;
-  padding: 15px;
-  width: 100%;
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-input[type="submit"]:hover {
-  background-color: white;
-  color: black;
-  transition: 0.5s;
+  margin-top: 8px;
 }
 
 /* FOOTER */
@@ -416,6 +76,7 @@ input[type="submit"]:hover {
   background-color: black;
   margin: 0 auto;
   text-align: center;
+  position: relative;
 }
 
 .footer p {
@@ -468,3 +129,5 @@ input[type="submit"]:hover {
   margin-top: 2px;
   margin-bottom: 20px;
 }
+
+/* MEDIA QUERIES */
