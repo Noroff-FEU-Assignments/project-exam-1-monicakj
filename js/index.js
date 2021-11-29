@@ -1,9 +1,12 @@
 const sliders = document.querySelector(".carouselbox"); 
 const buttonLeft = document.querySelector(".switchLeft");
 const buttonRight = document.querySelector(".switchRight");
-const url = "https://bucketlisttravels.mskj.one/wp-json/wp/v2/posts";
 
-async function carouselHomepage() {
+const url = "https://bucketlisttravels.mskj.one/wp-json/wp/v2/posts/?_embed";
+
+console.log(url);
+
+async function carouselHome() {
     try {
         const response = await fetch(url);
         const result = await response.json(); 
@@ -12,7 +15,7 @@ async function carouselHomepage() {
             sliders.innerHTML += 
                     `<div class="carouselbox-content">
                         <a href="/specificpage.html?id=${result[i].id}">
-                            <img src="${result[i].featured_media.links}" alt="${result[i].title.rendered}">
+                            <img src="${result[0]._embedded["wp:featuredmedia"][0].source_url}">
                             <p>${result[i].title.rendered}</p>
                         </a>
                     </div>`;
@@ -23,7 +26,7 @@ async function carouselHomepage() {
     }
 }
 
-carouselHomepage();
+carouselHome();
 
 let scrollPerClick = document.querySelector(".carouselbox").clientWidth; 
 let scrollAmount = 0; 

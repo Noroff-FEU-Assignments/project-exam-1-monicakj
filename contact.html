@@ -14,22 +14,28 @@
 
     <header>
         <nav>
-            <!-- LOGO -->
-            <a href="/index.html">
-                <div class="logo">
-                <img src="/image/logo-white.png">
-                </div>
-            </a>
-
+        
             <!-- TOPNAV -->
             <div class="topnav" id="myTopnav">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html" class="active">Contact</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        
+                <!-- LOGO -->
+                <a href="/index.html">
+                    <div class="logo">
+                        <img src="/image/logo-white.png">
+                    </div>
+                </a>
+        
+                <div class="topnav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html" class="active">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+                </div>
+        
             </div>
         </nav>
+
         <div class="header-contact"></div>
     </header>
 
@@ -84,18 +90,40 @@
     <!-- FOOTER -->
     <footer>
         <div class="footer">
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-pinterest"></a>
-            <a href="/index.html">
-                <img src="/image/logo-white.png">
-            </a>
-            <p>Copyright @ All Rights Reserved</p>
+    
+            <div class="footer-links">
+                <a href="/about.html">About</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/contact.html">Contact</a>
+                <a href="">Privacy</a>
+                <a href="">Cookies</a>
+                <a href="">Terms</a>
+            </div>
+    
+            <div class="social-media">
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+            </div>
+    
+            <div class="copyright">
+                <p>Copyright @ All Rights Reserved</p>
+            </div>
         </div>
     </footer>
 
     <!-- JAVASCRIPT -->
-    <script src="/js/topnav.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
     <script src="/js/contact.js"></script>
     
 </body>

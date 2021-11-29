@@ -1,9 +1,12 @@
-const detailsContainer = document.querySelector(".post-details");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
-console.log(id);
-const url = 'https://bucketlisttravels.mskj.one/wp-json/wp/v2/posts/' + id;
+
+const url = "https://bucketlisttravels.mskj.one/wp-json/wp/v2/posts/" + id + "?_embed";
+
+console.log(url);
+
+const detailsContainer = document.querySelector(".post-details");
 
 async function fetchPost() {
     try {
@@ -36,3 +39,4 @@ function createHtml(details) {
         </div>
         `;
 }
+

@@ -14,34 +14,44 @@
 
         <header>
             <nav>
-                <!-- LOGO -->
-                <a href="/index.html">
-                     <div class="logo">
-                    <img src="/image/logo-white.png">
-                    </div>
-                </a>
 
                 <!-- TOPNAV -->
                 <div class="topnav" id="myTopnav">
+
+                    <!-- LOGO -->
+                    <a href="/index.html">
+                        <div class="logo">
+                            <img src="/image/logo-white.png">
+                        </div>
+                    </a>
+
+                    <div class="topnav-links">
                     <a href="index.html" class="active">Home</a>
                     <a href="about.html">About</a>
                     <a href="blog.html">Blog</a>
                     <a href="contact.html">Contact</a>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+                    </div>
+                    
                 </div>
             </nav>
+
+            <!-- HEADER-HOME -->
                 <div class="header-home">
-                <!-- <div class="header-text">
-                    <p>Got a lust for adventure? Then get inspired with my
-                    independent travel guides from around the world...</p>
-                    <a href="">More about Bucket List Travels ></a> -->
+                    <div class="header-text">
+                    <h1>Bucket List Travels</h1>
+                    <p>Got a lust for adventure? <br>
+                        Then get inspired with my
+                    independent travel guides from around the world!</p>
+                    <a href="">More about Bucket List Travels ></a>
                 </div>
+            </div>
         </header>
 
         <main>
             <!-- LATEST POSTS -->
             <div class="latest-posts">
-                <h1>Latest Posts</h1>
+                <h2>Latest Posts</h2>
 
                 <div class="carousel-container">
                     <div class="carousel">
@@ -53,57 +63,52 @@
 
             <!-- DISCOVER1 -->
             <div class="discover1">
-                <h1>Discover your next destination</h1>
+                <h2>Discover your next destination</h2>
                 <a href="">
                 <button class="discover-button">Learn More</button>
                 </a>
             </div>
 
-            <!-- DISCOVER2 -->
-            <div class="discover2">
-
-            <div class="flights-hotels">
-                <div class="flights-hotels-text">Flights/hotels
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                        <a href="">
-                            <button class="discover2-button">Read More</button>
-                        </a>
-                    </div>
-                <div class="flights-hotels-img"></div>
-            </div>
-
-            <div class="guided-activities">
-                <div class="guided-activities-text">Guided Activities
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.
-                    </p>
-                        <a href="">
-                            <button class="discover2-button">Read More</button>
-                        </a>
-                </div>
-
-                <div class="guided-activities-img"></div>
-            </div>
         </div>
         </main>
 
         <!-- FOOTER -->
         <footer>
             <div class="footer">
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-pinterest"></a>
-                <a href="/index.html">
-                    <img src="/image/logo-white.png">
-                </a>
+
+                <div class="footer-links">
+                    <a href="/about.html">About</a>
+                    <a href="/blog.html">Blog</a>
+                    <a href="/contact.html">Contact</a>
+                    <a href="">Privacy</a>
+                    <a href="">Cookies</a>
+                    <a href="">Terms</a>
+                </div>
+
+                <div class="social-media">
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-pinterest"></a>
+                </div>
+
+                <div class="copyright">
                 <p>Copyright @ All Rights Reserved</p>
+                </div>
             </div>
         </footer>
         
         <!-- JAVASCRIPT -->
-        <script src="/js/topnav.js"></script>
+        <script>
+            function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+        </script>
+
         <script src="/js/index.js"></script>
     
 </body>

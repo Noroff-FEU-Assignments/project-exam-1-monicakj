@@ -10,31 +10,36 @@
 .blog-posts {
   width: 100%;
   height: auto;
+  margin: 80px 0 80px 0;
+}
+
+.blog-posts h1 {
+  margin-left: 10%;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .posts {
-  width: 78%;
-  margin-left: 159px;
-  margin-top: 80px;
-  background-color: white;
-  margin-bottom: 100px;
-  border: 1px solid black;
-}
-
-/* .posts a:hover {
-} */
-
-.posts h1 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.posts-content {
+  position: relative;
+  display: inline-block;
   width: 80%;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  border: 1px solid black;
+  text-decoration: none;
+  margin-left: 10%;
+  margin-bottom: 100px;
+}
+
+.posts-details {
+  width: 50%;
+  float: right;
+  padding-right: 5%;
+  margin-bottom: 80px;
+}
+
+.posts h2 {
+  width: fit-content;
+  margin: 20px 0 20px 20px;
 }
 
 .posts a {
@@ -42,8 +47,24 @@
   color: black;
 }
 
-.posts-details {
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 20px;
+.readmore-button {
+  width: 154px;
+  height: 48px;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 1s;
+  /* border-radius: 6px; */
+  border: none;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+.readmore-button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }
