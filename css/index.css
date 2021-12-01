@@ -21,10 +21,11 @@
   text-transform: uppercase;
   font-weight: bold;
   width: auto;
+  text-align: center;
 }
 
 .header-text p {
-  width: auto;
+  width: 550px;
   margin-bottom: 20px;
 }
 
@@ -60,6 +61,11 @@
   margin: 0px 20px 0px 20px;
 }
 
+.carousel-title {
+  text-decoration: none;
+  color: black;
+}
+
 .carousel {
   margin-top: 50px;
   height: 250px;
@@ -75,7 +81,6 @@
   line-height: 250px;
   font-size: 25px;
   text-align: center;
-  background-color: red;
   top: 0;
   z-index: 3;
   margin-top: 8%;
@@ -92,7 +97,7 @@
 }
 
 .carouselbox {
-  height: 250px;
+  height: auto;
   width: auto;
   overflow: hidden;
   white-space: nowrap;
@@ -199,63 +204,3 @@
   color: black;
   border: 1px solid black;
 }
-/* 
-.flights-hotels,
-.guided-activities {
-  height: 700px;
-  width: 100%;
-}
-
-.flights-hotels {
-  background-color: white;
-}
-
-.guided-activities {
-  background-color: #ededed;
-}
-
-.flights-hotels-img {
-  position: absolute;
-  margin-top: 73px;
-  margin-left: 159px;
-  background-color: #ccc;
-  width: 500px;
-  height: 553px;
-}
-
-.guided-activities-img {
-  position: absolute;
-  margin-left: 55%;
-  margin-top: 73px;
-  background-color: #ccc;
-  width: 500px;
-  height: 553px;
-}
-
-.flights-hotels-text,
-.guided-activities-text {
-  font-family: roboto;
-  font-size: 50px;
-  position: absolute;
-  color: black;
-  margin-top: 10%;
-  font-weight: bold;
-}
-
-.flights-hotels-text {
-  margin-top: 15%;
-  margin-left: 57%;
-}
-
-.guided-activities-text {
-  margin-top: 15%;
-  margin-left: 159px;
-}
-
-.flights-hotels-text p,
-.guided-activities-text p {
-  margin-top: 15px;
-  text-transform: none;
-  font-weight: normal;
-  width: 500px;
-} */

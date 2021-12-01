@@ -43,9 +43,9 @@ body {
 
 .topnav-links {
   position: absolute;
-  margin-left: 60%;
+  right: 10%;
   margin-top: 25px;
-  margin-right: 10%;
+  width: auto;
 }
 
 .topnav-links a {

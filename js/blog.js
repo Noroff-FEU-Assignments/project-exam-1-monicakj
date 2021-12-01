@@ -1,11 +1,18 @@
-const url = "https://bucketlisttravels.mskj.one/wp-json/wp/v2/posts/?_embed";
-const blogContainer = document.querySelector (".blog-posts");
+const blogContainer = document.querySelector (".blog-container");
+const loadMoreButton = document.querySelector (".loadmore-button");
 
-async function getPosts() {
+const url = "https://bucketlisttravels.mskj.one/wp-json/wp/v2/posts/?_embed";
+
+
+async function fetchPosts() {
     try {
         const response = await fetch(url);
-        const getResults = await response.json();
-        createHTML(getResults);
+        const posts = await response.json();
+
+        console.log(posts);
+
+        createHTML(posts);
+
     }
     catch(error) {
         console.log("An error has ocurred.");
@@ -13,7 +20,7 @@ async function getPosts() {
     }
 }
 
-getPosts();
+fetchPosts();
 
 function createHTML(posts){
     posts.forEach(function(posts) {
@@ -38,14 +45,3 @@ function createHTML(posts){
         `;
     })
 }
-
-
-//  <div class="posts-details">
-//         Published: ${posts.date}
-//         - Comments: (...)
-//         </div>
-
-// <div class="posts-content">
-//         ${posts.content.rendered}
-//         </div>
-//         </div>

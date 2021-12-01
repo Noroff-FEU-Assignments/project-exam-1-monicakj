@@ -1,38 +1,40 @@
-const sliders = document.querySelector(".carouselbox"); 
+const url = "https://bucketlisttravels.mskj.one/wp-json/wp/v2/posts?_embed";
+const carousel = document.querySelector(".carouselbox");
 const buttonLeft = document.querySelector(".switchLeft");
 const buttonRight = document.querySelector(".switchRight");
 
-const url = "https://bucketlisttravels.mskj.one/wp-json/wp/v2/posts/?_embed";
+async function fetchPosts() {
 
-console.log(url);
+      const response = await fetch(url);
+  
+      const results = await response.json();
+  
+      console.log(results);
 
-async function carouselHome() {
-    try {
-        const response = await fetch(url);
-        const result = await response.json(); 
+      const posts = results;
 
-        for(let i = 0; i < result.length; i++) {
-            sliders.innerHTML += 
-                    `<div class="carouselbox-content">
-                        <a href="/specificpage.html?id=${result[i].id}">
-                            <img src="${result[0]._embedded["wp:featuredmedia"][0].source_url}">
-                            <p>${result[i].title.rendered}</p>
-                        </a>
-                    </div>`;
-        }        
+      carousel.innerHTML = "";
+
+      for (let i = 0; i < posts.length; i++) {
+          carousel.innerHTML +=
+          `<a href="specificpage.html?id=${posts[i].id}" class="item">
+          <img src="${posts[i]._embedded['wp:featuredmedia'][0].source_url}">
+          
+          <div class="carousel-title">
+          <p>${posts[i].title.rendered}</p>
+          </div>
+          </a>`;
+      }
+
 }
-    catch(error) {
-        sliders.innerHTML = "An error has occured";
-    }
-}
 
-carouselHome();
+fetchPosts();
 
 let scrollPerClick = document.querySelector(".carouselbox").clientWidth; 
 let scrollAmount = 0; 
 
 buttonLeft.onclick = function () {
-    sliders.scrollTo({
+    carousel.scrollTo({
         top: 0,
         left: (scrollAmount -= scrollPerClick),
         behavior: "smooth",
@@ -44,11 +46,12 @@ buttonLeft.onclick = function () {
 }
 
 buttonRight.onclick = function() {
-    if(scrollAmount <= sliders.scrollWidth - sliders.clientWidth) {
-        sliders.scrollTo({
+    if(scrollAmount <= carousel.scrollWidth - carousel.clientWidth) {
+        carousel.scrollTo({
             top: 0,
             left: (scrollAmount += scrollPerClick),
             behavior: "smooth",
         }); 
     }
 }
+

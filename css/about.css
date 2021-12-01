@@ -27,20 +27,21 @@
 
 .about1-text,
 .about3-text {
-  width: auto;
+  width: 100%;
 }
 
 .about1-text h2,
 .about3-text h2 {
   text-transform: uppercase;
   font-weight: bold;
+  width: fit-content;
 }
 
 .about1-text p,
 .about3-text p {
   margin-top: 30px;
   line-height: 24px;
-  width: auto;
+  width: 60%;
 }
 
 /* ABOUT2 */
