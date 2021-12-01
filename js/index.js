@@ -4,14 +4,12 @@ const buttonLeft = document.querySelector(".switchLeft");
 const buttonRight = document.querySelector(".switchRight");
 
 async function fetchPosts() {
-
       const response = await fetch(url);
-  
       const results = await response.json();
+      
+      const posts = results;
   
       console.log(results);
-
-      const posts = results;
 
       carousel.innerHTML = "";
 
