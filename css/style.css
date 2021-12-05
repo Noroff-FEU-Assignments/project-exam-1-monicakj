@@ -166,34 +166,29 @@ body {
 }
 
 /* LOADER */
-/* .loader {
-  border: 16px solid #f3f3f3;
-  border-top: 16px solid var(--primary-colour);
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
-  margin-left: 50%;
-  transform: translateX(-50%);
+.fa-plane {
+  font-size: 2em;
+  color: black;
 }
 
-.btn-primary {
-  background: var(--primary-colour) !important;
-  border-color: var(--primary-colour) !important;
+.loader {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+  animation: loader 0.7s infinite;
 }
 
-.container a.btn-primary {
-  color: white !important;
-}
-
-@keyframes spin {
+@keyframes loader {
   0% {
-    transform: rotate(0deg);
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40px);
   }
   100% {
-    transform: rotate(360deg);
+    transform: translateY(0px);
   }
-} */
+}
 
 /* MEDIA QUERIES - TOPNAV */
 @media screen and (max-width: 768px) {
