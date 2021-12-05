@@ -67,7 +67,9 @@
         <!-- CONTACT CONTAINER -->
         <div class="contact-container">
             <h2>Let's Stay In Touch!</h2>
-        
+
+            <p class="validation"></p>
+
               <form id="contactForm">
 
                 <div>
@@ -79,19 +81,19 @@
                 <div>
                 <label for="email">Email</label>
                 <input type="text" id="email" name="email" placeholder="email@example.com">
-                <div class="form-error" id="emailError">Please enter a valid email address.</div>
+                <div class="form-error" id="emailError">Please enter a valid e-mail address.</div>
                 </div>
 
                 <div>
                     <label for="subject">Subject</label>
                     <input type="text" id="subject" name="subject" placeholder="Subject of your message">
-                    <div class="form-error" id="subjectError">Your subject must have a value with a minimum length of 10 characters.</div>
+                    <div class="form-error" id="subjectError">Your subject must have a value of 10 characters.</div>
                     </div>
         
                 <div>
                     <label for="message">Message</label>
                     <textarea id="message" name="message" placeholder="Your message" style="height:190px"></textarea>
-                    <div class="form-error" id="messageError">Your message must have a value with a minimum length of 25 characters.</div>
+                    <div class="form-error" id="messageError">Your message must have a value of 25 characters.</div>
                 </div>
         
                 <input type="submit" id="button" value="SUBMIT MESSAGE">
