@@ -15,13 +15,15 @@ async function fetchPosts() {
 
       for (let i = 0; i < posts.length; i++) {
           carousel.innerHTML +=
-          `<a href="specificpage.html?id=${posts[i].id}" class="item">
+          `
+          <a href="specificpage.html?id=${posts[i].id}" class="item">
           <img src="${posts[i]._embedded['wp:featuredmedia'][0].source_url}">
           
           <div class="carousel-title">
           <p>${posts[i].title.rendered}</p>
           </div>
-          </a>`;
+          </a>
+          `;
       }
 
 }

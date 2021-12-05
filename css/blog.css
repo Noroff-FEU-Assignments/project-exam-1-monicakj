@@ -1,52 +1,72 @@
 /* BLOG POSTS */
 .header-blog {
+  width: 100%;
   height: 500px;
-  width: 100%;
-  background-color: #cccccc;
-  background-image: url(/image/blog.png);
-  background-repeat: no-repeat;
+  background-color: #ccc;
 }
 
-.blog-container {
-  width: 100%;
-  height: auto;
-  margin: 80px 0 80px 0;
-}
-
-.blog-container h1 {
+.blog-title h1 {
+  margin-top: 80px;
+  width: fit-content;
   margin-left: 10%;
-  margin-bottom: 30px;
   text-transform: uppercase;
   font-weight: bold;
+  color: black;
 }
 
+/* BLOG CONTAINER */
+.posts-container {
+  width: 100%;
+  height: auto;
+  margin: 30px 0 80px 0;
+}
+
+/* POSTS CONTAINER */
 .posts {
-  position: relative;
-  display: inline-block;
   width: 80%;
   border: 1px solid black;
   text-decoration: none;
   margin-left: 10%;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
-.posts-details {
-  width: 50%;
-  float: right;
-  padding-right: 5%;
-  margin-bottom: 80px;
-}
-
-.posts h2 {
+.posts-title {
   width: fit-content;
   margin: 20px 0 20px 20px;
 }
 
-.posts a {
+.posts-title a {
   text-decoration: none;
   color: black;
 }
 
+/* POSTS DATE */
+.posts-title p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.posts-text-button {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.posts-featured-img img {
+  width: 100%;
+  /* height: fit-content; */
+}
+
+.posts-details {
+  display: flex;
+  margin: 20px;
+}
+
+.posts-details p {
+  width: auto;
+}
+
+/* READ-MORE BUTTON */
 .readmore-button {
   width: 154px;
   height: 48px;
@@ -69,21 +89,17 @@
   border: 1px solid black;
 }
 
-.loadmore-button {
-  width: 154px;
-  height: 48px;
-  background-color: black;
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 1s;
-  /* border-radius: 6px; */
-  border: none;
-  border: 1px solid black;
-  margin-top: 20px;
-  position: absolute;
-  bottom: 0;
-  width: 50%;
+/* MEDIA QUERIES */
+@media only screen and (max-width: 700px) {
+  .posts-details {
+    flex-direction: column;
+    align-items: center;
+  }
+  .posts-details p {
+    margin-top: 20px;
+    width: auto;
+  }
+  .posts-text-button {
+    margin-left: 0px;
+  }
 }

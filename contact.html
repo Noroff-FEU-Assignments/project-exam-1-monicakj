@@ -3,18 +3,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contant page which contains contact details of the author of the blog with a contact form.">
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/contact.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Bucket List Travels - Contact</title>
+    <title>Bucket List Travels - Contact Page</title>
 </head>
 <body>
 
     <header>
         <nav>
-        
             <!-- TOPNAV -->
             <div class="topnav" id="myTopnav">
         
@@ -24,7 +24,7 @@
                         <img src="/image/logo-white.png">
                     </div>
                 </a>
-        
+
                 <div class="topnav-links">
                     <a href="index.html">Home</a>
                     <a href="about.html">About</a>
@@ -32,7 +32,6 @@
                     <a href="contact.html" class="active">Contact</a>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
                 </div>
-        
             </div>
         </nav>
 
@@ -43,7 +42,9 @@
         <!-- CONTACT DETAILS -->
         <div class="contact-details">
             <h2>Contact Details</h2>
-            <p>124 Street Name<br>
+            <p>
+            Ola Nordmann<br>
+            124 Street Name<br>
             City Name<br>
             State, Country, 12345<br>
             email@example.com<br>
@@ -70,7 +71,7 @@
 
                 <div>
                     <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                    <input type="text" id="subject" name="subject" placeholder="Subject of your message">
                     <div class="form-error" id="subjectError">Your subject must have a value with a minimum length of 10 characters.</div>
                     </div>
         
@@ -84,13 +85,11 @@
         
               </form>
             </div>
-
     </main>
 
     <!-- FOOTER -->
     <footer>
         <div class="footer">
-    
             <div class="footer-links">
                 <a href="/about.html">About</a>
                 <a href="/blog.html">Blog</a>
@@ -99,30 +98,19 @@
                 <a href="">Cookies</a>
                 <a href="">Terms</a>
             </div>
-    
             <div class="social-media">
                 <a href="#" class="fa fa-instagram"></a>
                 <a href="#" class="fa fa-twitter"></a>
                 <a href="#" class="fa fa-pinterest"></a>
             </div>
-    
             <div class="copyright">
-                <p>Copyright @ All Rights Reserved</p>
+                <p>© 2021 Bucket List Travels. All rights reserved</p>
             </div>
         </div>
     </footer>
 
     <!-- JAVASCRIPT -->
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
+    <script src="/js/topnav.js"></script>
 
     <script src="/js/contact.js"></script>
     

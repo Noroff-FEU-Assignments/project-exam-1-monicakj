@@ -3,10 +3,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog page which contains a list of blog posts.">
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/blog.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Bucket List Travels - Blog Posts</title>
 </head>
@@ -35,21 +36,24 @@
         
             </div>
         </nav>
+
+        <div class="header-blog">
+            <img src="">
+        </div>
     </header>
 
     <main>
-        <!-- BLOG POSTS -->
-        <div class="blog-container">
+        <!-- POSTS -->
+        <div class="blog-title">
             <h1>Blog Posts</h1>
         </div>
-<!-- 
-        <button class="loadmore-button"></button> -->
+
+        <div class="posts-container"></div>
     </main>
 
     <!-- FOOTER -->
     <footer>
         <div class="footer">
-    
             <div class="footer-links">
                 <a href="/about.html">About</a>
                 <a href="/blog.html">Blog</a>
@@ -58,30 +62,19 @@
                 <a href="">Cookies</a>
                 <a href="">Terms</a>
             </div>
-    
             <div class="social-media">
                 <a href="#" class="fa fa-instagram"></a>
                 <a href="#" class="fa fa-twitter"></a>
                 <a href="#" class="fa fa-pinterest"></a>
             </div>
-    
             <div class="copyright">
-                <p>Copyright @ All Rights Reserved</p>
+                <p>© 2021 Bucket List Travels. All rights reserved</p>
             </div>
         </div>
     </footer>
     
     <!-- JAVASCRIPT -->
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
+    <script src="/js/topnav.js"></script>
 
     <script src="/js/displayError.js"></script>
     <script src="/js/blog.js"></script>

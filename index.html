@@ -3,18 +3,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page of the Bucket List Travels which contains latest blog posts, a brief about section, and a discover section with travel guides.">
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Bucket List Travels - Home</title>
+    <title>Bucket List Travels - Home Page</title>
 </head>
 <body>
 
         <header>
             <nav>
-
                 <!-- TOPNAV -->
                 <div class="topnav" id="myTopnav">
 
@@ -24,7 +24,6 @@
                             <img src="/image/logo-white.png">
                         </div>
                     </a>
-
                     <div class="topnav-links">
                     <a href="index.html" class="active">Home</a>
                     <a href="about.html">About</a>
@@ -32,7 +31,6 @@
                     <a href="contact.html">Contact</a>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
                     </div>
-                    
                 </div>
             </nav>
 
@@ -40,18 +38,15 @@
                 <div class="header-home">
                     <div class="header-text">
                     <h1>Bucket List Travels</h1>
-                    <!-- <p>Got a lust for adventure? Then get inspired with my
-                    independent travel guides from around the world!</p> -->
-                    <a href="/about.html">More about Bucket List Travels ></a>
                 </div>
             </div>
+            <div class="header-space"></div>
         </header>
 
         <main>
             <!-- LATEST POSTS -->
             <div class="latest-posts">
                 <h2>Latest Posts</h2>
-
                 <div class="carousel-container">
                     <div class="carousel">
                         <div class="carouselbox"></div>
@@ -61,49 +56,64 @@
                 </div>
             </div>
 
-            <!-- SPACE -->
-            <div class="space">
-                <div class="space-text">
-                <p>“A journey of a thousand miles begins with a single step” – Lao Tzu</p>
+            <!-- ABOUT -->
+            <div class="about-container">
+                <div class="about-text">
+                    <h3>Bucket List Travels</h3>
+                    <!-- <i class="fas fa-plane"></i> -->
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla at volutpat diam ut. Eget arcu dictum varius duis at consectetur lorem. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Sit amet volutpat consequat mauris nunc congue nisi. Nisi porta lorem mollis aliquam. <a href="/about.html">Read More ></a></p>
                 </div>
             </div>
 
             <!-- DISCOVER -->
             <div class="discover">
-                <h2>Discover your next destination</h2>
-
-                <div class="angle-down-symbol">
-                <i class="fas fa-angle-down fa-5x"></i>
+                <div class="discover-text">
+                    <h2>Explore the travel guides</h2>
+                    <p>Find the travel experience you’re looking for and
+                        inspiration for your next adventure.</p>
+                    <div class="angle-down-symbol">
+                        <i class="fas fa-angle-down fa-3x"></i>
+                    </div>
                 </div>
-
-                <!-- DISCOVER BUTTON -->
-                <!-- <a href="">
-                <button class="discover-button">Learn More</button>
-                </a> -->
             </div>
 
+            <!-- DESTINATIONS -->
             <section class="destinations">
+
+                <!-- ASIA -->
                     <a href="">
                         <div class="asia">
                         <h1>Asia</h1>
-                        <!-- <button class="discover-button">Learn More</button> -->
                         </div>
                     </a>
 
+                <!-- EUROPE -->
                     <a href="">
                         <div class="europe">
                             <h1>Europe</h1>
-                        <!-- <button class="discover-button">Learn More</button> -->
+                        </div>
+                    </a>
+
+                <!-- AFRICA -->
+                    <a href="">
+                        <div class="africa">
+                            <h1>Africa</h1>
+                        </div>
+                    </a>
+
+                <!-- AMERICA -->
+                    <a href="">
+                        <div class="america">
+                            <h1>America</h1>
                         </div>
                     </a>
             </section>
-
         </main>
 
         <!-- FOOTER -->
         <footer>
             <div class="footer">
-
                 <div class="footer-links">
                     <a href="/about.html">About</a>
                     <a href="/blog.html">Blog</a>
@@ -112,30 +122,19 @@
                     <a href="">Cookies</a>
                     <a href="">Terms</a>
                 </div>
-
                 <div class="social-media">
                     <a href="#" class="fa fa-instagram"></a>
                     <a href="#" class="fa fa-twitter"></a>
                     <a href="#" class="fa fa-pinterest"></a>
                 </div>
-
                 <div class="copyright">
-                <p>Copyright @ All Rights Reserved</p>
+                <p>© 2021 Bucket List Travels. All rights reserved</p>
                 </div>
             </div>
         </footer>
         
         <!-- JAVASCRIPT -->
-        <script>
-            function myFunction() {
-                    var x = document.getElementById("myTopnav");
-                    if (x.className === "topnav") {
-                        x.className += " responsive";
-                    } else {
-                        x.className = "topnav";
-                    }
-                }
-        </script>
+        <script src="/js/topnav.js"></script>
 
         <script src="/js/displayError.js"></script>
         <script src="/js/index.js"></script>
