@@ -17,8 +17,11 @@
 }
 
 .contact-details h2 {
+  margin-top: 80px;
+  width: 100%;
   text-transform: uppercase;
   font-weight: bold;
+  color: black;
 }
 
 .contact-details p {
