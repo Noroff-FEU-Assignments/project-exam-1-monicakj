@@ -51,9 +51,9 @@ function submitForm(submit) {
 
     form.reset();
 
-    setTimeout(function() {
-        validate.innerText = "";
-    }, 5000);
+    // setTimeout(function() {
+    //     validate.innerText = "";
+    // }, 5000);
 }
 
 function checkLength(value, len) {
