@@ -33,6 +33,7 @@ body {
   height: 72px;
   background-color: black;
   display: inline-flex;
+  overflow: hidden;
 }
 
 .logo img {
@@ -69,11 +70,6 @@ body {
 .topnav .icon {
   display: none;
   color: white;
-  background-color: red;
-}
-
-.topnav .icon:hover {
-  background-color: none;
 }
 
 /* LINKS */
@@ -199,4 +195,30 @@ body {
   }
 } */
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES - TOPNAV */
+@media screen and (max-width: 768px) {
+  .header {
+    text-align: center;
+  }
+  .topnav {
+    height: 140px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .topnav-links {
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: auto;
+    width: 100%;
+    right: 0;
+  }
+  .topnav-links a {
+    padding: 30px;
+    margin-left: 0;
+  }
+  .logo img {
+    margin-top: 15px;
+    margin-left: 36%;
+    text-align: center;
+  }
+}
